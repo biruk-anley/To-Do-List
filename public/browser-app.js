@@ -63,7 +63,7 @@ tasksDOM.addEventListener('click', async (e) => {
   loadingDOM.style.visibility = 'hidden'
 })
 
-// form
+// form handler
 
 formDOM.addEventListener('submit', async (e) => {
   e.preventDefault()
