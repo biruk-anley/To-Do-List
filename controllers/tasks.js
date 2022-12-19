@@ -38,6 +38,7 @@ const getTask = async (req, res) => {
          
     }
 }
+
 const updateTask = async (req, res) => {
     try {
         const { id: taskId } = req.params
