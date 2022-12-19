@@ -29,7 +29,9 @@ app.use(errorhandler)
 // create a function that accept a data from an api?
 
 
-
+app.get('/', (req, res) => {
+    res.send('To-Do-List')
+})
 
 
 
