@@ -1,5 +1,6 @@
 const express = require('express')
-
+const notfound = require('./middleware/notfound')
+const errorhandler = require('./middleware/errorhandler')
 const app = express()
 
 // using model
@@ -13,6 +14,9 @@ require('dotenv').config()
 // middleware
 app.use(express.static('./public'))
 app.use(express.json())
+
+app.use(errorhandler)
+
 
 // routes
 
